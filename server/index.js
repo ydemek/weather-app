@@ -20,7 +20,7 @@ app.use(
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('Express on Vercel test');
+    res.send('Express on Vercel');
 });
 app.get('/createUser', createUserContoller);
 app.get('/creatCities', createCitiesController);
