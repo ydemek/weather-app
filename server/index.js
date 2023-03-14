@@ -7,10 +7,10 @@ const cors = require('cors');
 const app = express();
 const PORT = 5000;
 
-const createUserContoller = require('./controllers/createUserController');
-const getWeather = require('./services/getWeather');
-const createCitiesController = require('./controllers/createCitiesController');
-const findCitiesController = require('./controllers/findCitiesController');
+const createUserContoller = require('./src/controllers/createUserController');
+const getWeather = require('./src/services/getWeather');
+const createCitiesController = require('./src/controllers/createCitiesController');
+const findCitiesController = require('./src/controllers/findCitiesController');
 
 app.use(
     cors({
