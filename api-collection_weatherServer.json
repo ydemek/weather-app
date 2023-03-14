@@ -1,0 +1,62 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "weatherServer",
+    "dateExported": "2023-03-14T07:56:41.930Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3cc14c34-db95-4e07-921f-a63fc74da7fd",
+            "colId": "0adb2ce1-52fb-4a73-a45e-11248c15e7e5",
+            "containerId": "",
+            "name": "findCities",
+            "url": "https://weather-app-server-ruddy.vercel.app/cities",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-13T20:43:20.837Z",
+            "modified": "2023-03-14T01:04:09.334Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cityName\": \"ist\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "efbaa256-e31c-4854-8169-5982f99cab72",
+            "colId": "0adb2ce1-52fb-4a73-a45e-11248c15e7e5",
+            "containerId": "",
+            "name": "getWeather",
+            "url": "https://weather-app-server-ruddy.vercel.app/weather?cityName=istanbul",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-03-14T07:50:46.402Z",
+            "modified": "2023-03-14T07:54:39.076Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "cityName",
+                    "value": "istanbul",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "3977a37d-062c-4412-a8dd-bdbebbc1124a",
+            "colId": "0adb2ce1-52fb-4a73-a45e-11248c15e7e5",
+            "containerId": "",
+            "name": "checkServer",
+            "url": "https://weather-app-server-ruddy.vercel.app",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-03-14T07:53:49.554Z",
+            "modified": "2023-03-14T07:53:49.554Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

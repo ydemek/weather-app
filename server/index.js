@@ -22,8 +22,8 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send('Express on Vercel');
 });
-app.get('/createUser', createUserContoller);
-app.get('/creatCities', createCitiesController);
+// app.get('/createUser', createUserContoller);
+// app.get('/creatCities', createCitiesController);
 app.post('/cities', findCitiesController);
 app.get('/weather', getWeather);
 
@@ -32,9 +32,7 @@ mongoose.connect(process.env.MONGO_URL).then(() => {
     app.listen(PORT);
 });
 
-// app.listen(PORT, () => {
-//     console.log(`Running on port ${PORT}.`);
-// });
+
 
 // Export the Express API
 module.exports = app;
