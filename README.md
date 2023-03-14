@@ -5,7 +5,7 @@ Built with the MERN stack (MongoDB, Express, React and NodeJS).
 
 Demo url's
 ###  [App](https://weather-app-weld-one.vercel.app/)
-###  [Server](https://weather-app-weld-one.vercel.app/)
+###  [Server](https://weather-app-server-ruddy.vercel.app/)
 
 ## Requirements
 
