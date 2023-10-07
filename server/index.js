@@ -7,10 +7,9 @@ const cors = require('cors');
 const app = express();
 const PORT = 5000;
 
-const createUserContoller = require('./src/controllers/createUserController');
 const getWeather = require('./src/services/getWeather');
-const createCitiesController = require('./src/controllers/createCitiesController');
 const findCitiesController = require('./src/controllers/findCitiesController');
+const getUnits = require('./src/services/getUnits');
 
 app.use(
     cors({
@@ -26,6 +25,7 @@ app.get('/', (req, res) => {
 // app.get('/creatCities', createCitiesController);
 app.post('/cities', findCitiesController);
 app.get('/weather', getWeather);
+app.get('/units', getUnits);
 
 mongoose.connect(process.env.MONGO_URL).then(() => {
     console.log(`listening on port ${PORT}`);
